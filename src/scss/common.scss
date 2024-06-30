@@ -1,0 +1,63 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.logo {
+	font-family: $fontFamilyChronicle;
+	@include adaptiveValue("font-size", 32, 24);
+	transition: color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fbd784;
+		}
+	}
+}
+
+.label {
+	color: #fbd784;
+	text-transform: uppercase;
+	letter-spacing: rem(6);
+	display: flex;
+	gap: rem(32);
+	align-items: center;
+	@include adaptiveValue("font-size", 18, 12);
+	line-height: math.div(22, 18);
+	&::before {
+		content: "";
+		flex: 0 0 rem(72);
+		height: rem(2);
+		background-color: #fbd784;
+		@media (max-width: $tablet) {
+			display: none;
+		}
+	}
+}
+.heading {
+	font-family: $fontFamilyChronicle;
+	@include adaptiveValue("font-size", 64, 24);
+	line-height: math.div(77, 64);
+}
+
+.text {
+	@include adaptiveValue("font-size", 18, 14);
+	line-height: math.div(32, 18);
+}
+.button {
+	display: flex;
+	max-width: rem(130);
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	line-height: math.div(22, 18);
+	gap: rem(16);
+	color: #fbd784;
+	transition: color 0.3s ease 0s;
+	@include adaptiveValue("font-size", 18, 14);
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fff;
+		}
+	}
+	&::before {
+		transform: rotate(-90deg);
+		margin-top: rem(2);
+	}
+}

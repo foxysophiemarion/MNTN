@@ -1,0 +1,94 @@
+.page__promo {
+	background-color: #f1e4e6;
+	color: #222222;
+}
+
+.promo__body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.promo__body {
+	max-width: 16.4375rem;
+	margin: 0 auto;
+}
+
+.promo__image {
+	position: relative;
+}
+
+@supports (margin-left: clamp(-14.375rem, 18.0113636364rem + -43.1818181818vw, 9.375rem)) {
+	.promo__image {
+		margin-left: clamp(-14.375rem, 18.0113636364rem + -43.1818181818vw, 9.375rem);
+	}
+}
+
+@supports not (margin-left: clamp(-14.375rem, 18.0113636364rem + -43.1818181818vw, 9.375rem)) {
+	.promo__image {
+		margin-left: calc(9.375rem + -23.75 * (100vw - 20rem) / 55);
+	}
+}
+
+.promo__image img {
+	width: 100%;
+}
+
+@supports (padding-left: clamp(0.0000000625rem, -1.1363635511rem + 5.6818180682vw, 3.125rem)) {
+	.content-promo {
+		padding-left: clamp(0.0000000625rem, -1.1363635511rem + 5.6818180682vw, 3.125rem);
+	}
+}
+
+@supports not (padding-left: clamp(0.0000000625rem, -1.1363635511rem + 5.6818180682vw, 3.125rem)) {
+	.content-promo {
+		padding-left: calc(0.0000000625rem + 3.1249999375 * (100vw - 20rem) / 55);
+	}
+}
+
+.content-promo__body {
+	border-left: 12px solid #f16d7f;
+	padding: 0px 0px 0px 1rem;
+}
+
+.content-promo__title {
+	font-weight: 900;
+	line-height: 1.1875;
+}
+
+@supports (font-size: clamp(2.375rem, 2.1477272727rem + 1.1363636364vw, 3rem)) {
+	.content-promo__title {
+		font-size: clamp(2.375rem, 2.1477272727rem + 1.1363636364vw, 3rem);
+	}
+}
+
+@supports not (font-size: clamp(2.375rem, 2.1477272727rem + 1.1363636364vw, 3rem)) {
+	.content-promo__title {
+		font-size: calc(2.375rem + 0.625 * (100vw - 20rem) / 55);
+	}
+}
+
+.content-promo__subtitle {
+	font-weight: 700;
+	line-height: 1.21875;
+}
+
+@supports (font-size: clamp(1.25rem, 0.9772727273rem + 1.3636363636vw, 2rem)) {
+	.content-promo__subtitle {
+		font-size: clamp(1.25rem, 0.9772727273rem + 1.3636363636vw, 2rem);
+	}
+}
+
+@supports not (font-size: clamp(1.25rem, 0.9772727273rem + 1.3636363636vw, 2rem)) {
+	.content-promo__subtitle {
+		font-size: calc(1.25rem + 0.75 * (100vw - 20rem) / 55);
+	}
+}
+
+.content-promo__subtitle span {
+	color: #f16d7f;
+}

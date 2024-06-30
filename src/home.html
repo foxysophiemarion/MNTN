@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="page__parallax parallax">
+				<div class="parallax__body">
+					<div class="parallax__images images-parallax">
+						<div data-prlx-mouse data-prlx-cx="100" data-prlx-cy="100" class="images-parallax__clouds"></div>
+						<div data-prlx-mouse data-prlx-cx="200" data-prlx-cy="200" class="images-parallax__mountains"></div>
+						<div data-prlx-mouse data-prlx-cx="300" data-prlx-cy="300" class="images-parallax__human"></div>
+					</div>
+				</div>
+				<div class="parallax__container">
+					<div class="parallax__all">
+						<div class="parallax__item follow">
+							<ul class="follow__list">
+								<li class="follow__item">
+									<a href="" class="follow__link">Follow us</a>
+								</li>
+								<li class="follow__item">
+									<a href="" class="follow__link _icon-instagram"></a>
+								</li>
+								<li class="follow__item">
+									<a href="" class="follow__link _icon-twitter"></a>
+								</li>
+							</ul>
+						</div>
+						<div class="parallax__item center">
+							<div class="center__label label">A Hiking guide</div>
+							<h1 class="center__heading heading">Be Prepared For The <span>Mountains And Beyond!</span></h1>
+							<button data-goto=".footer" type="button" class="center__button button _icon-arrow">scroll
+								down</button>
+						</div>
+						<div class="parallax__end"></div>
+						<div class="parallax__item pagging">
+							<ul class="pagging__list">
+								<li class="pagging__item">
+									<a data-goto=".header" href="" class="pagging__btn">Start</a>
+								</li>
+								<li class="pagging__item">
+									<a data-goto="#one" data-goto-top="30" href="" class="pagging__btn">01</a>
+								</li>
+								<li class="pagging__item">
+									<a data-goto="#two" data-goto-top="30" href="" class="pagging__btn">02</a>
+								</li>
+								<li class="pagging__item">
+									<a data-goto="#three" data-goto-top="30" href="" class="pagging__btn">03</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__content content">
+				<div class="content__container">
+					<div class="content__body">
+						<div id="one" data-watch="navigator" class="content__item item-content">
+							<div class="item-content__column item-content__column_1">
+								<div class="item-content__label label">GEt Started</div>
+								<div data-spollers="767,max" class="item-content__spollers">
+									<div class="item-content__item">
+										<button type="button" data-spoller class="item-content__heading heading">What level of
+											hiker
+											are you?</button>
+										<div class="item-content__text text">Determining what level of hiker you are can be an
+											important
+											tool when planning future hikes. This hiking level guide will help you plan hikes
+											according
+											to different hike ratings set by various websites like All Trails and Modern Hiker.
+											What type
+											of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+										</div>
+									</div>
+								</div>
+								<button type="button" class="item-content__button button _icon-arrow">read more</button>
+							</div>
+							<div class="item-content__image"><img src="@img/content/01.png" alt=""></div>
+						</div>
+						<div id="two" data-watch="navigator" class="content__item item-content item-content__reverse">
+							<div class="item-content__column item-content__column_2">
+								<div class="item-content__label label">GEt Started</div>
+								<div data-spollers="767,max" class="item-content__spollers">
+									<div class="item-content__item">
+										<button type="button" data-spoller class="item-content__heading heading">What level of
+											hiker
+											are you?</button>
+										<div class="item-content__text text">Determining what level of hiker you are can be an
+											important
+											tool when planning future hikes. This hiking level guide will help you plan hikes
+											according
+											to different hike ratings set by various websites like All Trails and Modern Hiker.
+											What type
+											of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+										</div>
+									</div>
+								</div>
+								<button type="button" class="item-content__button button _icon-arrow">read more</button>
+							</div>
+
+							<div class="item-content__image"><img src="@img/content/02.png" alt=""></div>
+						</div>
+						<div id="three" data-watch="navigator" class="content__item item-content">
+							<div class="item-content__column item-content__column_3">
+								<div class="item-content__label label">GEt Started</div>
+								<div data-spollers="767,max" class="item-content__spollers">
+									<div class="item-content__item">
+										<button type="button" data-spoller class="item-content__heading heading">What level of
+											hiker
+											are you?</button>
+										<div class="item-content__text text">Determining what level of hiker you are can be an
+											important
+											tool when planning future hikes. This hiking level guide will help you plan hikes
+											according
+											to different hike ratings set by various websites like All Trails and Modern Hiker.
+											What type
+											of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker?
+										</div>
+									</div>
+								</div>
+								<button type="button" class="item-content__button button _icon-arrow">read more</button>
+							</div>
+							<div class="item-content__image"><img src="@img/content/01.png" alt=""></div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+</html>

@@ -1,0 +1,93 @@
+//====================================================================================================
+.footer {
+	z-index: 1;
+	background-color: $bgColor;
+	padding-bottom: rem(120);
+	padding-top: rem(200);
+	&__container {
+		opacity: 0.8;
+	}
+
+	&__body {
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		@include adaptiveValue("gap", 212, 20);
+		@media (max-width: $mobile) {
+			gap: rem(30);
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__column {
+		flex: 0 1 rem(630);
+		@media (max-width: $tablet) {
+			flex: 1 1 auto;
+		}
+	}
+}
+.column-footer {
+	&__body {
+		display: flex;
+		min-height: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (max-width: $tablet) {
+			row-gap: rem(50);
+		}
+	}
+
+	&__logo {
+	}
+
+	&__text {
+		max-width: rem(303);
+		line-height: math.div(32, 18);
+		padding: rem(24) 0px 0px 0px;
+		@include adaptiveValue("font-size", 18, 14);
+	}
+
+	&__copy {
+		font-weight: 500;
+		color: rgba(255, 255, 255, 0.5);
+		line-height: math.div(32, 18);
+		@include adaptiveValue("font-size", 18, 14);
+	}
+}
+
+.spollers {
+	white-space: nowrap;
+
+	&__item {
+		min-height: 100%;
+	}
+
+	&__heading {
+		color: #fbd784;
+		@media (any-hover: hover) {
+		}
+	}
+
+	&__body {
+		@include adaptiveValue("padding-top", 24, 15);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue("gap", 16, 10);
+	}
+
+	&__link {
+		line-height: math.div(32, 18);
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+//====================================================================================================

@@ -1,0 +1,29 @@
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Close</button>
+			<form class="popup__form form-popup" method="get" action="#" enctype="multipart/form-data">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="First Name"
+					class="form-popup__input">
+				<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Last Name"
+					class="form-popup__input">
+				<input autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail"
+					class="form-popup__input">
+				<input autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="Password"
+					class="form-popup__input">
+				<div class="form-popup__checkbox checkbox">
+					<div class="checkbox__body">
+						<input id="c_1" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="form[]">
+						<label for="c_1" class="checkbox__label"><span class="checkbox__text">Male</span></label>
+					</div>
+					<div class="checkbox__body">
+						<input id="c_2" data-error="Ошибка" class="checkbox__input" type="radio" value="1" name="form[]">
+						<label for="c_2" class="checkbox__label"><span class="checkbox__text">Female</span></label>
+					</div>
+				</div>
+				<button type="submit" class="form-popup__button">Registration</button>
+				<button type="submit" class="form-popup__button">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
